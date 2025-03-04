@@ -1,0 +1,35 @@
+{
+  "name": "word-highlighter",
+  "displayName": "Word Highlighter",
+  "description": "Highlights words in the editor based on a JSON configuration file",
+  "version": "0.0.1",
+  "publisher": "coldsewoo",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "word-highlighter.reload",
+        "title": "Word Highlighter: Reload configuration"
+      }
+    ],
+    "configuration": {
+      "title": "Word Highlighter",
+      "properties": {
+        "wordHighlighter.configPath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the JSON configuration file"
+        }
+      }
+    }
+  }
+}

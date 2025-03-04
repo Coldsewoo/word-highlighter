@@ -1,0 +1,7 @@
+{
+  "some-word": "#00FF00",
+  "important": "#FF0000",
+  "note": "#FFA500",
+  "todo": "#0000FF",
+  "fixme": "#FF00FF"
+}
